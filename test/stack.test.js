@@ -1,40 +1,60 @@
-class Stack {
-  constructor() {
-    this.top = -1;
-    this.items = {};
-  }
+// describe ('My Stack', () => {
+//   it('is created empty', () => {
+//     const stack = new Stack();
 
-  get peek() {
-    return this.items[this.top];
-  }
+//     expect(stack.top).toBe(-1);
+//   });
 
-  push(value) {
-    this.top += 1;
-    this.items[this.top] = value;
-  }
-}
+//   it.todo('can push to the top');
 
-describe('My Stack', () => {
-  let stack;
+//   it.todo('can pop off');
+// })
 
-  beforeEach(() => {
-    stack = new Stack();
-  });
 
-  it('is created empty', () => {
-    expect(stack.top).toBe(-1);
-    expect(stack.items).toEqual({});
-  });
 
-  it('can push to the top', () => {
-    stack.push('🥑');
-    expect(stack.top).toBe(0);
-    expect(stack.peek).toBe('🥑');
 
-    stack.push('🌽');
-    expect(stack.top).toBe(1);
-    expect(stack.peek).toBe('🌽');
-  });
 
-  it.todo('can pop off');
-});
+
+
+
+
+// class Stack {
+//   constructor() {
+//     this.top = -1;
+//     this.items = {};
+//   }
+
+//   get peek() {
+//     return this.items[this.top];
+//   }
+
+//   push(value) {
+//     this.top += 1;
+//     this.items[this.top] = value;
+//   }
+// }
+
+// describe('My Stack', () => {
+//   let stack;
+
+//   beforeEach(() => {
+//     stack = new Stack();
+//   });
+
+//   it('is created empty', () => {
+//     expect(stack.top).toBe(-1);
+//     expect(stack.items).toEqual({});
+//   });
+
+//   it('can push to the top', () => {
+//     stack.push('🥑');
+//     expect(stack.top).toBe(0);
+//     expect(stack.peek).toBe('🥑');
+
+//     stack.push('🌽');
+//     expect(stack.top).toBe(1);
+//     expect(stack.peek).toBe('🌽');
+//   });
+
+//   it.todo('can pop off');
+// });
