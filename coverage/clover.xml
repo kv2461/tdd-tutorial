@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1665695381561" clover="3.2.0">
+  <project timestamp="1665695381561" name="All files">
+    <metrics statements="21" coveredstatements="21" conditionals="18" coveredconditionals="17" methods="1" coveredmethods="1" elements="40" coveredelements="39" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+    <file name="increment.js" path="C:\Users\Kevin\Documents\vscode\gitrepos\tutorials\tdd-basics-project\js\increment.js">
+      <metrics statements="21" coveredstatements="21" conditionals="18" coveredconditionals="17" methods="1" coveredmethods="1"/>
+      <line num="2" count="6" type="stmt"/>
+      <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="4" count="1" type="stmt"/>
+      <line num="6" count="5" type="cond" truecount="6" falsecount="0"/>
+      <line num="7" count="3" type="stmt"/>
+      <line num="9" count="2" type="stmt"/>
+      <line num="10" count="2" type="stmt"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="2" type="stmt"/>
+      <line num="13" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="16" count="1" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="2" type="cond" truecount="3" falsecount="1"/>
+      <line num="22" count="2" type="stmt"/>
+      <line num="23" count="2" type="stmt"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="29" count="5" type="stmt"/>
+      <line num="32" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
