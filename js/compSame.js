@@ -28,7 +28,20 @@
 // The two arrays have the same size (> 0) given as parameter in function comp.
 
 function comp(array1, array2){
-    //your code here
-  }
+    let array1Set = new Set();
+    for (let i = 0; i < array1.length; i++) {
+        if (Number.isInteger(Math.sqrt(array1[i]))) {
+            array1Set.add(Math.sqrt(array1[i]));
+        }
+        array1Set.add(array1[i]);
+        array1Set.add(array1[i]*array1[i]);
+    }
+    for (let i = 0; i < array2.length; i++) {
+        if (!(array1Set.has(array2[i]) || array1Set.has(Math.sqrt(array2[i])) || array1Set.has(array2*array2))) {
+            return false;
+        }
+    }
+    return true;
+}
 
 module.exports = comp;
