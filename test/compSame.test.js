@@ -30,12 +30,25 @@ const comp = require('../js/compSame');
 
 
 describe('compSame',() => {
+
     it('comp(a,b) returns false because in b 36100 is not the square of any number of a.', () => {
         let a = [121, 144, 19, 161, 19, 144, 19, 11];
         let b = [121, 14641, 20736, 36100, 25921, 361, 20736, 361];
 
-        comp
+        expect(comp(a,b)).toBe(false);
+    });
+
+    it('comp(a,b) returns false because in b 132 is not the square of any number of a.', () => {
+        let a = [121, 144, 19, 161, 19, 144, 19, 11];
+        let b = [132, 14641, 20736, 361, 25921, 361, 20736, 361];
 
         expect(comp(a,b)).toBe(false);
+    })
+
+    it('comp(a, b) returns true', () => {
+        let a = [121, 144, 19, 161, 19, 144, 19, 11];
+        let b = [11*11, 121*121, 144*144, 19*19, 161*161, 19*19, 144*144, 19*19];
+
+        expect(comp(a,b)).toBe(true);
     })
 })
