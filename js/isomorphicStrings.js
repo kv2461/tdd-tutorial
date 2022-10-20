@@ -29,29 +29,26 @@
 var isIsomorphic = function(s, t) {
     let isomorphicMapS = new Map();
     let isomorphicMapT = new Map();
-    let newWordArrayS = [];
-    let newWordArrayT = [];
+    
     for (let i = 0; i < t.length; i++) {
         if (isomorphicMapS.has(t[i]) && isomorphicMapS.get(t[i]) === s[i]) {
-            newWordArrayS.push(isomorphicMapS.get(t[i]));
+            
         } else if (isomorphicMapS.has(t[i]) && isomorphicMapS.get(t[i]) !== s[i]) {
           return false;
         } else {
             isomorphicMapS.set(t[i],s[i]);
-            newWordArrayS.push(s[i]);
         }
     }
     for (let i = 0; i < s.length; i++) {
         if (isomorphicMapT.has(s[i]) && isomorphicMapT.get(s[i]) === t[i]) {
-            newWordArrayT.push(isomorphicMapT.get(s[i]));
+            
         } else if (isomorphicMapT.has(s[i]) && isomorphicMapT.get(s[i]) !== t[i]) {
           return false;
         } else {
             isomorphicMapT.set(s[i],t[i]);
-            newWordArrayT.push(t[i]);
         }
     }
-    return (newWordArrayS.join('') === s && newWordArrayT.join('') === t);
+    return true;
 };
 
 
